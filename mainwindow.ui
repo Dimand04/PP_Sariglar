@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame_auth">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="le_login">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>271</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Фамилия</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_password">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>76</y>
+       <width>271</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Пароль</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_login">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>122</y>
+       <width>271</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Войти</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_main">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>1000</y>
+      <width>1280</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>257</width>
+       <height>717</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="autoExpandDelay">
+      <number>-1</number>
+     </property>
+     <property name="itemsExpandable">
+      <bool>true</bool>
+     </property>
+     <property name="animated">
+      <bool>false</bool>
+     </property>
+     <property name="allColumnsShowFocus">
+      <bool>false</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <attribute name="headerVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="headerCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="headerHighlightSections">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="headerShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="headerStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string notr="true">Столбец 1</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>Компьютеры и ноутбуки</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Персональные компьютеры</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ноутбуки</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Моноблоки</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Серверы</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Периферия</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Аудиооборудование</string>
+       </property>
+       <property name="font">
+        <font>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Наушники и гарнитуры</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Колонки</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Микрофоны</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>Видеоустройства</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Мониторы</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Проекторы</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Веб-камеры</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Видеокамеры</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>Устройства ввода</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Мыши</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Клавиатуры</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>Печать и сканирование</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Принтеры</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Сканеры</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>МФУ</string>
+        </property>
+       </item>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Сетевое оборудование</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Маршрутизаторы</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Коммутаторы</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Прочее</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Интерактивные доски</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3D-принтеры</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ИБП</string>
+       </property>
+      </item>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pb_logout">
+     <property name="geometry">
+      <rect>
+       <x>88</x>
+       <y>678</y>
+       <width>81</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Выйти</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_addNewUser">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>638</y>
+       <width>243</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Создать пользователя</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_device">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>1000</y>
+      <width>1015</width>
+      <height>719</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pb_addNewDevice">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>2</y>
+       <width>115</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tw_devices">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>1015</width>
+       <height>679</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SelectionMode::NoSelection</enum>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollMode::ScrollPerPixel</enum>
+     </property>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Уникальный
+номер</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Модель</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Поставщик</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Кабинет</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Тип</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLineEdit" name="le_fId">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>2</y>
+       <width>150</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>ID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_fModel">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>2</y>
+       <width>150</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Модель</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_fManufacturer">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>2</y>
+       <width>150</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Поставщик</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_fRoom">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>2</y>
+       <width>150</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="placeholderText">
+      <string>Кабинет</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_clear">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>2</y>
+       <width>217</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Отчистить фильтры</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_deviceDetails">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>1000</y>
+      <width>1015</width>
+      <height>717</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pb_back">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>93</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Назад</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>42</y>
+       <width>97</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Модель:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>82</y>
+       <width>129</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Поставщик:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>122</y>
+       <width>171</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Ответственный:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>162</y>
+       <width>99</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Кабинет:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>202</y>
+       <width>63</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Тип:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>242</y>
+       <width>85</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Статус:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_model">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>44</y>
+       <width>300</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_manufacturer">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>84</y>
+       <width>300</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_responsible">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>124</y>
+       <width>300</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_room">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>164</y>
+       <width>300</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_status">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>244</y>
+       <width>300</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_change">
+     <property name="geometry">
+      <rect>
+       <x>496</x>
+       <y>44</y>
+       <width>119</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Изменить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_ok">
+     <property name="geometry">
+      <rect>
+       <x>622</x>
+       <y>44</y>
+       <width>93</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Ок</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cb_type">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>204</y>
+       <width>300</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_delete">
+     <property name="geometry">
+      <rect>
+       <x>498</x>
+       <y>84</y>
+       <width>93</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Удалить</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
